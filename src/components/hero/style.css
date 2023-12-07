@@ -1,0 +1,108 @@
+/** @format */
+
+.hero {
+  height: calc(100vh - 100px);
+  background: linear-gradient(100deg, #0c0c1d, #111132);
+  overflow: hidden;
+  position: relative;
+}
+
+.hero .wrapper {
+  max-width: 1024px;
+  height: 100%;
+  margin: auto;
+}
+
+.hero .textContainer {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .hero .textContainer {
+    height: 50%;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.hero .textContainer h2 {
+  font-size: 30px;
+  color: rebeccapurple;
+  letter-spacing: 10px;
+}
+
+.hero .textContainer h1 {
+  font-size: 60px;
+}
+
+@media (max-width: 768px) {
+  .hero .textContainer h1 {
+    font-size: 36px;
+  }
+}
+
+.hero .textContainer .buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.hero .textContainer .buttons a {
+  padding: 15px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+  font-weight: 300;
+  z-index: 99;
+}
+
+.hero .textContainer .buttons a:hover {
+  color: orange;
+  border: 1px solid orange;
+}
+
+.hero .textContainer img {
+  width: 50px;
+}
+
+.hero .sliderTextContainer {
+  width: 50%;
+  position: absolute;
+  font-size: 50vh;
+  bottom: 0;
+  white-space: nowrap;
+  color: #ffffff09;
+  font-weight: bold;
+}
+
+.hero .imageContainer {
+  height: 100vh;
+  display: flex;
+  align-content: center;
+  position: absolute;
+  top: 0;
+  right: 50px;
+}
+
+.hero .imageContainer img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .hero .imageContainer {
+    height: 50%;
+    width: 100%;
+    top: unset;
+    bottom: 0;
+    right: unset;
+  }
+}
