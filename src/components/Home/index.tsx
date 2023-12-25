@@ -2,9 +2,8 @@ import Navbar from "../Navbar";
 import Hero from "../hero";
 import Projets from "../Projets";
 import AboutMe from "../AboutMe";
-import MySkills from "../MySkills";
 import Contact from "../Contact";
-
+import data from "../../data/data.json";
 const Home = () => {
   return (
     <>
@@ -13,8 +12,7 @@ const Home = () => {
         <Hero />
       </section>
       <AboutMe />
-      <MySkills />
-      <Projets />
+      <Projets cards={data} />
       <Contact />
     </>
   );

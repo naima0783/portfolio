@@ -1,38 +1,13 @@
 import { useRef } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
-import "./style.css";
 import ProjetCard from "./ProjetCard";
-
-interface Competence {
-  nom: string;
+import Skils from "../../model/skils";
+import "./style.css";
+interface Props {
+  cards: Skils[] | undefined;
 }
 
-interface Projet {
-  titre: string;
-  description: string;
-  competences: Competence[];
-}
-
-const Projets = () => {
-  const projets: Projet[] = [
-    {
-      titre: "Projet 1",
-      description: "",
-      competences: [{ nom: "React" }, { nom: "TypeScript" }],
-    },
-    {
-      titre: "Projet 2",
-      description: "",
-
-      competences: [{ nom: "Node.js" }, { nom: "MongoDB" }],
-    },
-    {
-      titre: "Projet 3",
-      description: "",
-
-      competences: [{ nom: "Angular" }, { nom: "Firebase" }],
-    },
-  ];
+const Projets = ({ cards }: Props) => {
   const ref = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress } = useScroll({
@@ -44,6 +19,7 @@ const Projets = () => {
     stiffness: 1000,
     damping: 30,
   });
+
   return (
     <section id="Projets">
       <div className="projects" ref={ref}>
@@ -56,16 +32,15 @@ const Projets = () => {
         </div>
       </div>
 
-      <div className="grid">
-        {projets.map((projet, index) => (
+      <section className="flexbox">
+        {cards?.map((skill: Skils) => (
           <ProjetCard
-            key={index}
-            titre={projet.titre}
-            description={projet.description}
-            competences={projet.competences}
+            key={skill.title}
+            skill={skill}
+            borderColor="darkmagenta"
           />
         ))}
-      </div>
+      </section>
     </section>
   );
 };

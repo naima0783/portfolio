@@ -31,7 +31,7 @@ const MaPage = () => {
     damping: 30,
   });
   return (
-    <section>
+    <section id="Skills">
       <div className="MySkills" ref={ref}>
         <div className="progress">
           <h1>Mes compétences </h1>

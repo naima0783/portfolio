@@ -3,13 +3,13 @@
   left: 0;
   padding-top: 10px;
   text-align: center;
-  color: rebeccapurple;
+  color: #d08e09;
   font-size: 36px;
 }
 
 .MySkills .progress .progressBar {
   height: 8px;
-  background-color: white;
+  background-color: #099ddc;
 }
 
 /* Media queries pour les appareils mobiles */

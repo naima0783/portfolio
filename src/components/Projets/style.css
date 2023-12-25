@@ -11,13 +11,25 @@
   left: 0;
   padding-top: 10px;
   text-align: center;
-  color: rebeccapurple;
+  color: #f6fbfd;
   font-size: 36px;
 }
 
 .projects .progress .progressBar {
   height: 8px;
-  background-color: white;
+  background-color: #099ddc;
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  max-width: 115em;
+  margin: auto;
+}
+
+h2 {
+  margin-left: 1em;
 }
 
 /* Media queries pour les appareils mobiles */

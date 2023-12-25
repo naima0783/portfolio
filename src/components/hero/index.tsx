@@ -52,19 +52,13 @@ const Hero = () => {
           <motion.h2 variants={textVariants}>NAIMA AMIMEUR</motion.h2>
           <motion.h1 variants={textVariants}>Developpeuse Full Stack</motion.h1>
           <motion.div className="buttons" variants={textVariants}>
-            <motion.a href="#Projects" variants={textVariants}>
+            <motion.a href="#Projets" variants={textVariants}>
               Mes Projets
             </motion.a>
             <motion.a href="#Contact" variants={textVariants}>
               Contactez-moi
             </motion.a>
           </motion.div>
-          <motion.img
-            variants={textVariants}
-            animate="scrollButton"
-            src="../../assets/scroll.png"
-            alt="boutton"
-          />
         </motion.div>
       </div>
       {/* slide text */}
@@ -76,10 +70,6 @@ const Hero = () => {
       >
         Hire Me
       </motion.div>
-      {/* image container */}
-      <div className="imageContainer">
-        <img src="/hero.png" alt="développeur" />
-      </div>
     </div>
   );
 };

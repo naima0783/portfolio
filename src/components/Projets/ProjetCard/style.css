@@ -1,0 +1,9 @@
+article.horizontal {
+  width: 26.5em;
+  margin: 0.5em;
+  border: 2px solid;
+}
+
+article.horizontal:hover {
+  cursor: pointer;
+}

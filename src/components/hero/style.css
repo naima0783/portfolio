@@ -2,7 +2,7 @@
 
 .hero {
   height: calc(100vh - 100px);
-  background: linear-gradient(100deg, #0c0c1d, #111132);
+  background: linear-gradient(100deg, #010d13, #010d13);
   overflow: hidden;
   position: relative;
 }
@@ -34,7 +34,7 @@
 
 .hero .textContainer h2 {
   font-size: 30px;
-  color: rebeccapurple;
+  color: #0999d7;
   letter-spacing: 10px;
 }
 
@@ -64,8 +64,8 @@
 }
 
 .hero .textContainer .buttons a:hover {
-  color: orange;
-  border: 1px solid orange;
+  color: #099ddc;
+  border: 1px solid #099ddc;
 }
 
 .hero .textContainer img {

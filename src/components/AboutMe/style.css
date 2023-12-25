@@ -3,13 +3,87 @@
   left: 0;
   padding-top: 10px;
   text-align: center;
-  color: rebeccapurple;
+  color: #f6fbfd;
   font-size: 36px;
 }
 
 .aboutMe .progress .progressBar {
   height: 8px;
-  background-color: white;
+  background-color: #099ddc;
+}
+.skills {
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  font-size: 1.1rem;
+  background: rgba(159, 153, 153, 0.2);
+  border-radius: 5px;
+  font-weight: 600;
+  color: white;
+}
+.skills:hover {
+  color: #0999d7;
+}
+
+.SkillsTitle,
+.aboutTitle {
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 3rem;
+}
+.about_content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10rem;
+  align-items: center;
+  margin: 5rem;
+}
+
+.skillsDiv {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btnAbout {
+  background-color: #0999d7;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin: 20rem;
+}
+
+.btnAbout:hover {
+  background-color: #0999d73f;
+}
+
+/* Style général du paragraphe */
+.paragraphe-presentation {
+  font-family: "Arial", sans-serif; /* Police élégante */
+  color: #333; /* Couleur du texte sombre pour une bonne lisibilité */
+  line-height: 1.6; /* Espacement des lignes pour une lecture confortable */
+  max-width: 600px; /* Largeur maximale du paragraphe */
+  margin: 0 auto; /* Centrer le paragraphe */
+  padding: 20px; /* Espacement autour du texte */
+  background-color: #f9f9f9; /* Couleur de fond légère */
+  border-radius: 10px; /* Bords arrondis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet 3D subtil */
+}
+
+/* Titre de la section */
+.titre-presentation {
+  font-size: 1.8em; /* Taille du titre plus grande */
+  color: #2a2a2a; /* Couleur légèrement différente pour le titre */
+  margin-bottom: 10px; /* Espacement après le titre */
+  text-align: center; /* Centrer le titre */
+}
+
+/* Accentuation des mots importants */
+.mot-important {
+  color: #d35400; /* Couleur pour mettre en évidence des mots spécifiques */
+  font-weight: bold; /* Rendre le texte en gras */
 }
 
 /* Media queries pour les appareils mobiles */

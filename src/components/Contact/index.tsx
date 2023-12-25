@@ -27,7 +27,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="Contact" className="contactTitle">
+    <section id="Contact">
       <div className="contactTitle" ref={ref}>
         <div className="progress">
           <h1>Contact</h1>
@@ -37,6 +37,7 @@ const Contact = () => {
           ></motion.div>
         </div>
       </div>
+
       <div className="contact-content">
         <div className="contact-info">
           <h1>Me contacter</h1>
@@ -51,11 +52,17 @@ const Contact = () => {
             LinkedIn
           </button>
           <button
-            onClick={() => window.open("https://www.whatsapp.com", "_blank")}
+            onClick={() =>
+              window.open(
+                "https://api.whatsapp.com/send?phone=330783023253",
+                "_blank"
+              )
+            }
           >
             WhatsApp
           </button>
         </div>
+
         <div className="contact-form" ref={ref}>
           <form onSubmit={handleSubmit}>
             <input
