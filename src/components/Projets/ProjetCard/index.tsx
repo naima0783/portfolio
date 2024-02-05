@@ -5,40 +5,30 @@ import "./style.css";
 
 interface Props {
   skill: Skils;
-  borderColor?: string;
+  image: string;
 }
 
-const ProjetCard = ({ skill, borderColor = "#009688" }: Props) => {
-  const defaultColor: string = "transparent";
-  const [color, setColor] = useState<string>(defaultColor);
-
-  const showBorder = () => {
-    setColor(borderColor);
-  };
-
-  const hideBorder = () => {
-    setColor(defaultColor);
-  };
-
+const ProjetCard = ({ skill, image }: Props) => {
   return (
-    <article
-      className="card horizontal"
-      style={{ borderColor: color }}
-      onMouseOver={showBorder}
-      onMouseOut={hideBorder}
-    >
+    <article className="cardProjet horizontal">
       <div className="card-image">
-        <img src={skill.image} alt={skill.title} />
+        <img
+          className="imgCard"
+          src={require("../../../assets/portfolio1.png")}
+          alt={skill.title}
+        />
       </div>
       <div className="card-stacked">
         <div className="card-content">
-          <h3>{skill.title}</h3>
+          <h3 className="titl">{skill.title}</h3>
           {skill.competences.map((competence) => (
             <Chip
               key={competence.nom}
               style={{
-                backgroundColor: "blue",
+                backgroundColor: "#099ddc",
                 color: "white",
+                marginTop: 2,
+                marginRight: 2,
               }}
               label={competence.nom}
               className="chip"

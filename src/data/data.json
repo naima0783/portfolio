@@ -1,25 +1,46 @@
 [
   {
-    "title": "Projet 1",
-    "image": "../../../assets/app.png",
+    "title": "Pokedex",
+    "image": "../assets/portfolio1.png",
 
-    "description": "Description de la Card 1",
-    "competences": [{ "nom": "React" }, { "nom": "TypeScript" }]
+    "competences": [
+      { "nom": "React" },
+      { "nom": "TypeScript" },
+      { "nom": "Java" },
+      { "nom": "MVC" },
+      { "nom": "Spring" },
+      { "nom": "API-Rest" },
+      { "nom": "Firebase" },
+      { "nom": "GitHub" }
+    ]
   },
   {
-    "title": "Projet 2",
-    "image": "../../../assets/app.png",
+    "title": "Pizza",
+    "image": "../assets/portfolio1.png",
 
-    "description": "Description de la Card 1",
-
-    "competences": [{ "nom": "Node.js" }, { "nom": "MongoDB" }]
+    "competences": [
+      { "nom": "React Native" },
+      { "nom": "MySQL" },
+      { "nom": "DBeaver" },
+      { "nom": "TypeScript" },
+      { "nom": "Java" },
+      { "nom": "MVC" },
+      { "nom": "Spring" },
+      { "nom": "Expo" },
+      { "nom": "Docker" },
+      { "nom": "BDD" },
+      { "nom": "GitHub" }
+    ]
   },
   {
-    "title": "Projet 3",
-    "image": "../../../assets/app.png",
+    "title": "Portfolio",
+    "image": "../assets/portfolio1.png",
 
-    "description": "Description de la Card 1",
-
-    "competences": [{ "nom": "Angular" }, { "nom": "Firebase" }]
+    "competences": [
+      { "nom": "React" },
+      { "nom": "TypeScript" },
+      { "nom": "Canva" },
+      { "nom": "GitHub" }
+    ]
   }
 ]

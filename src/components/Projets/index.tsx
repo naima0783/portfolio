@@ -32,15 +32,15 @@ const Projets = ({ cards }: Props) => {
         </div>
       </div>
 
-      <section className="flexbox">
+      <article className="flexbox">
         {cards?.map((skill: Skils) => (
           <ProjetCard
             key={skill.title}
             skill={skill}
-            borderColor="darkmagenta"
+            image="../../../assets/portfolio1.png"
           />
         ))}
-      </section>
+      </article>
     </section>
   );
 };

@@ -22,14 +22,15 @@
 
 .flexbox {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
   max-width: 115em;
-  margin: auto;
+  margin-top: 14rem;
 }
 
-h2 {
-  margin-left: 1em;
+h3 {
+  color: black;
 }
 
 /* Media queries pour les appareils mobiles */

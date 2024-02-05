@@ -1,9 +1,23 @@
 article.horizontal {
-  width: 26.5em;
+  width: -webkit-fill-available;
   margin: 0.5em;
   border: 2px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+  border-radius: 10px;
 }
 
-article.horizontal:hover {
-  cursor: pointer;
+.imgCard {
+  width: 100%;
+}
+
+.card-image {
+  width: auto;
+}
+
+.cardProjet {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }

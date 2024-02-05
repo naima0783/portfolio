@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import { useScroll, useSpring, motion } from "framer-motion";
 import "./style.css";
+import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 const Contact = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -14,15 +15,15 @@ const Contact = () => {
     damping: 30,
   });
 
-  const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
+    const mailtoLink = `mailto:${"naima.amimeur.pro@gmail.com"}?subject=${encodeURIComponent(
       name
     )}&body=${encodeURIComponent(message)}`;
+
     window.location.href = mailtoLink;
   };
 
@@ -66,19 +67,10 @@ const Contact = () => {
         <div className="contact-form" ref={ref}>
           <form onSubmit={handleSubmit}>
             <input
-              type="email"
-              id="form-input-control-email"
-              name="user_email"
-              placeholder="Email…"
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <input
               type="text"
               id="form-input-control-name"
               name="user_name"
-              placeholder="Name…"
+              placeholder="Objet"
               required
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -88,11 +80,11 @@ const Contact = () => {
               name="user_message"
               placeholder="Message…"
               required
-              rows={4}
+              rows={15}
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             />
-            <button type="submit">Submit</button>
+            <button type="submit">Envoyer</button>
           </form>{" "}
         </div>
       </div>

@@ -28,8 +28,7 @@ section {
 .my-class {
   color: blue;
 }
-
-@media (max-width: 738px) {
+@media (max-width: 600px) {
   .my-class {
     color: red;
   }

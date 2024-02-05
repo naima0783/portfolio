@@ -30,7 +30,7 @@ const AboutMe = () => {
         <div className="about_content">
           <div className="about__content-main">
             <div className=" paragraphe-presentation">
-              <h3 className="aboutTitle  titre-presentation">Salut!</h3>
+              <h3 className="aboutTitle  titre-presentation">Hello !</h3>
               <p>
                 je suis Naima Amimeur, une développeuse Full Stack dynamique et
                 déterminée, passionnée par l'exploration et la maîtrise des
@@ -65,6 +65,7 @@ const AboutMe = () => {
               <div className="skills">SPRING BOOT</div>
               <div className="skills">Conception BDD</div>
               <div className="skills">MySQL</div>
+              <div className="skills">PHP</div>
             </div>
           </div>
         </div>

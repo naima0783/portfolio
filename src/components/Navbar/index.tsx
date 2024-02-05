@@ -6,7 +6,6 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 const Navbar = () => {
   return (
     <div className="navbar">
-      {/* SideBar */}
       <Sidebar />
       <div className="wrapper">
         <motion.span

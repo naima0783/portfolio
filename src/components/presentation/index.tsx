@@ -67,9 +67,7 @@ const Hero = () => {
         // variants={sliderVariants}
         initial="initial"
         animate="animate"
-      >
-        Hire Me
-      </motion.div>
+      ></motion.div>
     </div>
   );
 };
